@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="project3style.css">
+    <link rel="icon" href="picture/suraj.jpeg">
+    </head>
+    <body>
+        <h1 id="d1">STP Computer Education</h1>
+        <div id="d2">
+            <p id="d3">use me !</p>
+            <input id="d4" type="range" min="0" max="1000" oninput="show()">
+        </div>
+        <script>
+            function show(){
+                var a=document.getElementById('d1');
+                var b=document.getElementById('d4').value;
+                a.style.fontSize=b+'px';
+                var c=document.getElementById('d3');
+                c.innerHTML=('Your font size is now:- '+b+'px');
+            }
+        </script>
+    </body>
+</html>
